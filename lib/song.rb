@@ -2,13 +2,14 @@ class Song
 
   attr_accessor :name, :artist, :genre
   @@count = 0
-  @@artist = Array.new
-  @@genre = Array.new
+  @@artist = Hash.new
+  @@genre = Hash.new
 
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
     @genre = genre
+    
     @@count += 1
     if !@@artist[artist].is_a? Numeric
       @@artist[artist] = 1
