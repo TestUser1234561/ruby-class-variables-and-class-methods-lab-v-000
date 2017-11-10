@@ -11,16 +11,8 @@ class Song
     @genre = genre
     
     @@count += 1
-    if !@@artist[artist].is_a? Numeric
-      @@artist[artist] = 1
-    else
-      @@artist[artist] += 1
-    end
-    if !@@genre[genre].is_a? Numeric
-      @@genre[genre] = 1
-    else
-      @@genre[genre] += 1
-    end
+    @@artist << artist
+    @@genre << genre
   end
 
   def count
