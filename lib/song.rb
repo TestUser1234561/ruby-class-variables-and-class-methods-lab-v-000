@@ -15,23 +15,23 @@ class Song
     @@genres << genre
   end
 
-  def count()
+  def count
     return @@count
   end
 
-  def artists()
+  def artists
     return @@artist
   end
 
-  def genres()
+  def genres
     return @@genres
   end
 
-  def genre_count()
+  def genre_count
 
   end
 
-  def artist_count()
+  def artist_count
 
   end
 end
