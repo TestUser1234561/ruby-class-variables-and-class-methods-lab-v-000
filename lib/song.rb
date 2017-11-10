@@ -36,6 +36,3 @@ class Song
   end
 
 end
-
-test = Song.new("t1", "t2", "t3")
-puts test.count
