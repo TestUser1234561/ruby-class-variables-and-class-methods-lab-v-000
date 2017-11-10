@@ -40,7 +40,15 @@ class Song
   end
 
   def self.artist_count
-
+    hash = Hash.new
+    @@genres.each do |v|
+      if !hash[v].is_a? Numeric
+        hash[v] = 1
+      else
+        hash[v] += 1
+      end
+    end
+    return hash
   end
 
 end
