@@ -41,7 +41,7 @@ class Song
 
   def self.artist_count
     hash = Hash.new
-    @@genres.each do |v|
+    @@artists.each do |v|
       if !hash[v].is_a? Numeric
         hash[v] = 1
       else
