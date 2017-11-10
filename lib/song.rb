@@ -14,12 +14,30 @@ class Song
       @@artist[artist] = 1
     else
       @@artist[artist] += 1
-    end 
+    end
     if !@@genre[genre].is_a? Numeric
       @@genre[genre] = 1
     else
       @@genre[genre] += 1
-    end 
+    end
   end
+
+  def count
+    return @@count
+  end
+
+  def artists
+    return @@artist
+  end
+
+  def genres
+    return @@genres
+  end
+
+  def genre_count
+
+  end
+
+  def artist
 
 end
